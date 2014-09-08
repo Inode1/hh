@@ -27,6 +27,9 @@ def take_data(line):
 def equal(array,num):
     l2=array
     l1=sum1(array,num)
+    if l1==None:
+        print "Not equal"
+        return
     for x in l1:
         if x in array:
             l2.remove(x)
@@ -56,7 +59,7 @@ if b%2==0:
     equal(line,b/2)
 else:
     print "Not equal"
-if sum(line, 100)==None:
+if sum1(line, 100)==None:
     print "no"
 else:
     print "yes"
